@@ -1,0 +1,547 @@
+:root {
+    --white-font: #FFFFFF;
+    --black-font: #000000;
+    --colour1: #C6D8FF;
+    --colour2: #71A9F7;
+    --colour3: #6B5CA5;
+    --colour4: #72195A;
+    --colour5: #4C1036;
+}
+
+.main-container {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Lora;
+    color: var(--white-font);
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner-left {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: var(--colour5);
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;   
+}
+
+.banner-right {
+    width: 80%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.banner-text {
+    position: absolute;
+    padding: 2em;
+}
+
+.banner-title {
+    font-size: 3em;
+}
+
+.banner-subtitle {
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+.intro-blurb-card {
+    font-size: 1.5em;
+    overflow: hidden;
+    padding: 1em;
+    display: flex;
+    place-items: center;
+    color: var(--colour5);
+}
+
+.evolution-title {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0.75em;
+    background-color: var(--colour4);
+}
+
+.image {
+    width: 100%;
+    object-position: center;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.image-reference {
+    display: none;
+}
+
+.image:hover .image-reference {
+    display: block;
+    background-color: var(--colour5);
+}
+
+.image-blurb {
+    padding: 0.5em;
+    background-color: var(--colour3);
+    text-align: center;
+    display: flex;
+    place-items: center;
+}
+
+.image-blurb-heading {
+    font-size: 2em;
+    text-align: center;
+}
+
+.image-blurb-text {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#banner {
+    grid-area: ban;
+}
+
+#introblurb {
+    grid-area: ib;
+}
+
+#evolutiontitle {
+    grid-area: evt;
+}
+
+#image1 {
+    grid-area: im1;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image2 {
+    grid-area: im2;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image3 {
+    grid-area: im3;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image4 {
+    grid-area: im4;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image5 {
+    grid-area: im5;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image6 {
+    grid-area: im6;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image7 {
+    grid-area: im7;
+
+    width: 100%;
+    position: relative;
+}
+
+#image7_1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url("./images/Image7.1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image7_2 {
+    width: 50%;
+    height: 100%;
+    background-image: url("./images/Image7.2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image8 {
+    grid-area: im8;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#imageblurb1 {
+    grid-area: ib1;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#imageblurb2 {
+    grid-area: ib2;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#imageblurb3 {
+    grid-area: ib3;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#imageblurb4 {
+    grid-area: ib4;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#imageblurb5 {
+    grid-area: ib5;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#imageblurb6 {
+    grid-area: ib6;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#imageblurb7 {
+    grid-area: ib7;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#imageblurb8 {
+    grid-area: ib8;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+.main-container {
+    display: grid;
+    column-gap: 1em;
+}
+  
+.main-container {
+    grid-template:
+        "ban ban ban ban" minmax(18em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "evt evt evt evt" minmax(8em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib  ib  ib  ib " minmax(28em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib1 ib1 ib1 ib1" minmax(14em, auto)
+        "im1 im1 im1 im1" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib2 ib2 ib2 ib2" minmax(14em, auto)
+        "im2 im2 im2 im2" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib3 ib3 ib3 ib3" minmax(14em, auto)
+        "im3 im3 im3 im3" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib4 ib4 ib4 ib4" minmax(14em, auto)
+        "im4 im4 im4 im4" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib7 ib7 ib7 ib7" minmax(14em, auto)
+        "im7 im7 im7 im7" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib8 ib8 ib8 ib8" minmax(14em, auto)
+        "im8 im8 im8 im8" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib5 ib5 ib5 ib5" minmax(14em, auto)
+        "im5 im5 im5 im5" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib6 ib6 ib6 ib6" minmax(14em, auto)
+        "im6 im6 im6 im6" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+}
+
+@media (min-width: 40em) {
+    .banner-left {
+        width: 25%;
+    }
+    
+    .banner-right {
+        width: 75%;
+    }
+
+    .banner-title {
+        font-size: 3em;
+        text-align: left;
+    }
+    
+    .banner-subtitle {
+        font-size: 2em;
+        padding-top: 1em;
+        text-align: left;
+    }
+
+    #imageblurb1 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb2 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+    
+    #imageblurb3 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb4 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+    
+    #imageblurb5 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb6 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+
+    #imageblurb7 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb8 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+
+    .main-container {
+        grid-template:
+            "ban ban ban ban ban ban ban ban" minmax(18em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "evt evt evt evt evt evt evt evt" minmax(8em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib  ib  ib  ib  ib  ib  ib  ib " minmax(28em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib1 ib1 ib1 im1 im1 im1 im1 im1" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im2 im2 im2 im2 im2 ib2 ib2 ib2" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib3 ib3 ib3 im3 im3 im3 im3 im3" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im4 im4 im4 im4 im4 ib4 ib4 ib4" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib7 ib7 ib7 im7 im7 im7 im7 im7" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im8 im8 im8 im8 im8 ib8 ib8 ib8" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib5 ib5 ib5 im5 im5 im5 im5 im5" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im6 im6 im6 im6 im6 ib6 ib6 ib6" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+    }
+}
+
+@media (min-width: 75em) {
+    .banner-left {
+        width: 25%;
+    }
+    
+    .banner-right {
+        width: 75%;
+    }
+
+    .banner-title {
+        font-size: 4em;
+        text-align: left;
+    }
+    
+    .banner-subtitle {
+        font-size: 2em;
+        padding-top: 1em;
+        text-align: left;
+    }
+    
+    .evolution-title {
+        font-size: 3em;
+    }
+
+    .image-blurb-heading {
+        font-size: 3em;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .image-blurb-text {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #imageblurb1 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb2 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+    
+    #imageblurb3 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb4 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+    
+    #imageblurb5 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb6 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+
+    #imageblurb7 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb8 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+
+    .main-container {
+        grid-template:
+            "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(22em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "evt evt evt evt evt evt evt evt evt evt evt evt" minmax(8em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib  ib  ib  ib  ib  ib  ib  ib  ib  ib  ib  ib " minmax(12em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib1 ib1 ib1 ib1 ib1 im1 im1 im1 im1 im1 im1 im1" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im2 im2 im2 im2 im2 im2 im2 ib2 ib2 ib2 ib2 ib2" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib3 ib3 ib3 ib3 ib3 im3 im3 im3 im3 im3 im3 im3" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im4 im4 im4 im4 im4 im4 im4 ib4 ib4 ib4 ib4 ib4" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib7 ib7 ib7 ib7 ib7 im7 im7 im7 im7 im7 im7 im7" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im8 im8 im8 im8 im8 im8 im8 ib8 ib8 ib8 ib8 ib8" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib5 ib5 ib5 ib5 ib5 im5 im5 im5 im5 im5 im5 im5" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im6 im6 im6 im6 im6 im6 im6 ib6 ib6 ib6 ib6 ib6" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+    }
+}
